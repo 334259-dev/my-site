@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+ max-width: 1000px;
+ margin: 0 auto;
+}
+
+/* Header */
+.site-header {
+  background: #7768ff;
+  background-image: url("header-dk.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.site-header h1 { 
+  background:white;
+  color: #092b5a;  
+  text-align: center;
+  font-size: 2rem;
+  font-family: Bernard MT Condensed;
+  font-weight: bold;
+  margin-top:300px;
+  border-radius:12px;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 20% 1fr;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation Bar */
+.left-sidebar {
+  background: #7768ff;
+  padding: 1rem;
+}
+
+.left-sidebar a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.left-sidebar a:hover {
+  color: #092b5a;
+}
+
+/* Main Content */
+.main-content {
+  background:white;
+  color:#7768ff;
+  padding: 2rem;
+  margin: 0;
+  border-right: 20px solid #7768ff; 
+  border-bottom: 20px solid #7768ff; 
+}
+
+/* about*/
+.section-grid{
+ border:1px solid #7768ff;
+ margin-bottom:30px;
+}
+
+.section-grid h2{
+ margin:0;
+ padding:10px;
+ background:#f2f2f2;
+ color:#092b5a;
+ border-bottom:1px solid #7768ff;
+}
+
+.grid-content{
+ display:grid;
+ grid-template-columns:1fr 1fr;
+}
+
+.photo-box{
+ width:100%;
+ height:auto
+}
+
+.photo-box img{
+ width:100%;
+ height:auto;
+ border-radius: 8px;
+ display:block;
+}
+
+.text-box{
+ padding:20px;
+ color:#092b5a;
+ line-height:1.8;
+}
+
+.text-box ul{
+ margin:0;
+ padding-left:25px;
+}
+
+.text-box li{
+ margin-bottom:10px;
+}
+
+/* Footer */
+.site-footer {
+ background: #7768ff;
+ color: #092b5a;
+ font-size: 0.6rem;
+ text-align: right;
+ padding: 1rem;
+ border-right: 30px solid #7768ff;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+  
+ .info-grid,
+ .grid-content{
+   grid-template-columns:1fr;
+  }
+
+ .photo-box{
+   border-right:none;
+   border-bottom:1px solid #7768ff;
+  }
+}
