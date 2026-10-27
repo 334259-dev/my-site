@@ -199,12 +199,9 @@ body {
 }
 
 .project-table {
-  width: 95%;
+  width: 100%;
   border-collapse: collapse;
   table-layout: fixed;
-  margin: 0 auto;
-  background: #fff;
-  color: #000;
   font-size: 16px;
   line-height: 1.7;
 }
